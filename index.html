@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f7f4ed" />
+  <meta name="description" content="A celebration of love. Save the date, leave a wish, and create your own wedding keepsake." />
+  <title>Aanya & Aarav — Our Wedding</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet" />
+  <link rel="icon" href="assets/favicon.png" type="image/png" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="fantasy.css" />
+</head>
+<body>
+  <div class="site-shell" id="top">
+    <header class="site-header" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="Back to the beginning">
+        <span class="brand-symbol">✳</span><span>THE WEDDING EDITION</span>
+      </a>
+      <nav class="desktop-links" aria-label="Sections">
+        <a href="#our-day">The day</a>
+        <a href="#wishes">Your wishes</a>
+      </nav>
+      <button class="header-action" type="button" data-open-studio>
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.7" y="3.7" width="16.6" height="16.6" rx="2"/><circle cx="9" cy="9" r="1.5"/><path d="m4 17 5.5-5 3.5 3 2.5-2 4.5 4"/></svg>
+        <span>Create a keepsake</span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-heading">
+        <div class="hero-wash" aria-hidden="true"></div>
+        <div class="hero-floral hero-floral-left" aria-hidden="true"></div>
+        <div class="hero-copy">
+          <p class="eyebrow hero-kicker"><span class="kicker-line"></span> TOGETHER, IN LOVE & IN MAGIC <span class="kicker-line"></span></p>
+          <div class="hero-intro">A fairytale written in the stars</div>
+          <h1 id="hero-heading"><span data-bride>Aanya</span><span class="ampersand">&amp;</span><span data-groom>Aarav</span></h1>
+          <div class="hero-divider"><span></span><svg viewBox="0 0 54 18" aria-hidden="true"><path d="M1 9h16c5 0 5-7 10-7s5 7 10 7h16M1 9h16c5 0 5 7 10 7s5-7 10-7h16"/></svg><span></span></div>
+          <p class="hero-description">Under the stars, surrounded by love,<br/>our most beautiful chapter is about to begin.</p>
+          <div class="hero-date"><span data-hero-date>Sunday, 14 February 2027</span><span class="date-dot">✦</span><span data-city>Kozhikode, Kerala</span></div>
+          <div class="hero-buttons"><a class="btn btn-dark" href="#our-day">Save the date <span aria-hidden="true">↗</span></a><a class="text-link" href="#wishes">Leave your wishes <span aria-hidden="true">↘</span></a></div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="hero-art-blob"></div>
+          <div class="hero-arch"><img src="assets/wedding-couple.webp" alt="Romantic wedding couple beneath a floral arch" fetchpriority="high" /></div>
+          <div class="art-caption"><span>AN UNFORGETTABLE DAY</span><span>EST. 2027</span></div>
+          <span class="hero-art-glint glint-1">✧</span><span class="hero-art-glint glint-2">✦</span>
+        </div>
+        <div class="hero-bottom-note">FOLLOW THE LOVE STORY <span aria-hidden="true">↓</span></div>
+      </section>
+
+      <section class="quote-section" aria-label="A note of love"><div class="quote-seal">✧</div><p>"And suddenly all the love songs<br/>were about <em>you.</em>"</p><span>AN ENCHANTED BEGINNING</span><div class="quote-bottom">a moment to remember · a lifetime to cherish</div></section>
+
+      <section class="date-section" id="our-day" aria-labelledby="date-heading">
+        <div class="date-flower" aria-hidden="true"></div>
+        <div class="date-photo-card"><img src="assets/wedding-venue.webp" alt="Romantic candlelit wedding garden filled with white flowers" loading="lazy"><span class="date-photo-caption">LOVE IS IN THE AIR <i>✧</i></span></div><div class="date-content">
+          <p class="eyebrow"><span class="star-inline">✳</span> MARK YOUR CALENDARS <span class="star-inline">✳</span></p>
+          <h2 id="date-heading">Save <em>the date</em></h2>
+          <p class="date-intro">A golden evening, a thousand little lights,<br/>and our favourite people in one place.</p>
+          <div class="date-block"><div class="date-day" data-day>14</div><div class="date-side"><span data-month>FEBRUARY</span><span data-year>2027</span></div></div>
+          <div class="date-meta"><span class="meta-rule"></span><div><strong data-weekday>SUNDAY</strong><p><span data-time>5:30 PM onwards</span> · <span data-city>Kozhikode, Kerala</span></p></div><span class="meta-rule"></span></div>
+          <p class="count-label">THE CELEBRATION BEGINS IN</p>
+          <div class="countdown" aria-label="Countdown to the wedding">
+            <div><strong id="days">--</strong><span>DAYS</span></div><div class="count-sep">:</div>
+            <div><strong id="hours">--</strong><span>HOURS</span></div><div class="count-sep">:</div>
+            <div><strong id="minutes">--</strong><span>MINUTES</span></div><div class="count-sep">:</div>
+            <div><strong id="seconds">--</strong><span>SECONDS</span></div>
+          </div>
+          <button class="btn btn-outline calendar-button" id="calendarBtn" type="button"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4M17 3v4M3 10h18"/></svg> Add to my calendar</button>
+        </div>
+      </section>
+
+      <section class="wish-section" id="wishes" aria-labelledby="wishes-heading">
+        <div class="wish-decoration" aria-hidden="true">✧</div><div class="wish-photo-band" aria-hidden="true"></div>
+        <div class="wish-heading"><p class="eyebrow">LOVE NOTES & WARM WISHES</p><h2 id="wishes-heading">Send us your <em>sweetest wishes</em></h2><p>Your blessings, wishes, and beautiful words will make our day even more special.</p></div>
+        <div class="wish-area">
+          <form id="wishForm" class="wish-form">
+            <div class="form-heading"><span class="form-heart" aria-hidden="true">♡</span><h3>A note from your heart</h3><p>Write a little something for the happy couple.</p></div>
+            <label for="guestName">YOUR NAME</label><input id="guestName" name="guestName" type="text" maxlength="60" placeholder="What should we call you?" autocomplete="name" required />
+            <label for="guestMessage">YOUR WISH</label><textarea id="guestMessage" name="guestMessage" rows="5" maxlength="500" placeholder="Wishing you both a lifetime of..." required></textarea>
+            <button class="btn btn-dark wish-submit" type="submit">Send your love <span aria-hidden="true">♡</span></button>
+            <p class="form-feedback" id="wishFeedback" role="status" aria-live="polite"></p>
+          </form>
+          <div class="wishes-board"><div class="wishes-board-head"><span>THE WISHING CORNER</span><span class="wishes-count" id="wishesCount">0 NOTES</span></div><div id="wishesList" class="wishes-list"><div class="empty-wishes"><span>✳</span><h3>Every beautiful word matters.</h3><p>Be the first to leave a wish for the happy couple.</p></div></div><p class="wish-privacy">Wishes are saved in this browser. Shared wishes need a database.</p></div>
+        </div>
+      </section>
+
+      <section class="closing" aria-label="Closing message"><span class="closing-star">✳</span><p>Can't wait to celebrate with you</p><strong><span data-bride>Aanya</span> <i>&amp;</i> <span data-groom>Aarav</span></strong><small>WITH LOVE, ALWAYS</small></section>
+    </main>
+    <footer class="footer"><span>A LITTLE LOVE, A LITTLE MAGIC</span><a href="#top">BACK TO TOP ↑</a></footer>
+  </div>
+
+  <button id="floatingKeepsake" class="floating-keepsake" type="button" data-open-studio aria-label="Open the wedding photo keepsake maker">
+    <span class="floating-icon"><svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><circle cx="9" cy="9" r="1.25"/><path d="m4 17 5-4.5 3.5 3 3-3 4.5 4.5"/></svg></span><span class="floating-text">Create your <em>keepsake</em><small>YOUR PHOTO, OUR DAY</small></span><span class="floating-arrow">↗</span>
+  </button>
+
+  <div class="studio-backdrop" id="studioBackdrop" aria-hidden="true"></div>
+  <aside class="studio" id="studioPanel" role="dialog" aria-modal="true" aria-labelledby="studioTitle" aria-hidden="true" tabindex="-1">
+    <div class="studio-head"><div><p class="eyebrow">CREATE SOMETHING MAGICAL</p><h2 id="studioTitle">Your <em>fairytale frame.</em></h2></div><button type="button" class="studio-close" id="studioClose" aria-label="Close keepsake maker"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5 5 19"/></svg></button></div>
+    <p class="studio-subtitle">Add your favourite photo to our wedding frame and keep a memory of this special day.</p>
+    <div class="studio-layout"><div class="keepsake-preview-wrap"><div class="keepsake-preview" id="keepsakePreview">
+      <span class="keepsake-top">LOVE, LAUGHTER <span>✧</span> FOREVER AFTER</span>
+      <div class="keepsake-image-wrap"><img id="keepsakePhoto" src="assets/wedding-couple.webp" alt="Your wedding photo preview" /></div>
+      <div class="keepsake-bottom"><span class="keepsake-small">THE WEDDING CELEBRATION OF</span><div class="keepsake-names"><span data-bride>Aanya</span> <em>&amp;</em> <span data-groom>Aarav</span></div><span class="keepsake-divider">✧</span><span class="keepsake-date" data-keepsake-date>14 FEBRUARY 2027 · KOZHIKODE</span><span class="keepsake-sign" id="keepsakeSignPreview">WITH LOVE, ALWAYS</span></div>
+      <div class="keepsake-corner corner-tl">✧</div><div class="keepsake-corner corner-br">✧</div>
+    </div></div>
+    <div class="studio-controls"><label for="photoInput" class="upload-control"><span class="upload-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16V4M7 9l5-5 5 5M4 16v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3"/></svg></span><span><strong>Upload your photo</strong><small>JPG, PNG or WEBP · max 15 MB</small></span><span class="upload-plus">+</span></label><input class="visually-hidden" type="file" id="photoInput" accept="image/jpeg,image/png,image/webp,image/avif" />
+      <div class="studio-field"><label for="signatureInput">ADD A PERSONAL TOUCH <span>(OPTIONAL)</span></label><input id="signatureInput" type="text" maxlength="38" placeholder="With love, your name" /></div>
+      <div class="studio-field"><label for="zoomInput">PHOTO ZOOM</label><div class="zoom-line"><span>−</span><input id="zoomInput" type="range" min="1" max="2.5" step="0.05" value="1" aria-label="Photo zoom" /><span>+</span></div></div>
+      <button class="btn btn-dark download-button" type="button" id="downloadBtn"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M5 17v3h14v-3"/></svg> Download my keepsake <span>↗</span></button>
+      <button class="reset-button" id="resetPhotoBtn" type="button">↶ Reset to sample photo</button><p class="studio-feedback" id="studioFeedback" aria-live="polite" role="status"></p>
+      <p class="studio-help">Your selected photo stays in your browser and is not uploaded to a server.</p>
+    </div></div>
+  </aside>
+  <script src="script.js" defer></script>
+</body>
+</html>

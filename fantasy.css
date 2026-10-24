@@ -1,0 +1,180 @@
+/* Wedding Fantasy Edition — photographic, romantic, fully responsive */
+:root {
+  --ivory:#faf4e9; --paper:#fffaf1; --sage:#7c8a70; --sage-deep:#26382c;
+  --ink:#3d382f; --muted:#807867; --accent:#bc9761; --rose:#f3e6d9;
+  --gold:#d4b07c; --gold-light:#f0dbb5;
+  --serif:'Cormorant Garamond',Georgia,serif;
+  --script:'Great Vibes','Brush Script MT',cursive;
+}
+body{background:#fbf6ee;color:#3a3b31}
+.site-shell{background:#fbf6ee}
+.site-header{position:absolute;top:0;left:0;right:0;z-index:12;background:linear-gradient(#182118a3,#18211812);color:#fff;border-bottom:1px solid #ffffff40;height:88px;padding:0 clamp(20px,6vw,95px)}
+.brand{font-size:10px;letter-spacing:2.65px;color:#f7ebd7;font-weight:600}
+.brand-symbol{color:var(--gold-light);font-size:26px}
+.desktop-links{color:#fff9e6;letter-spacing:1px;font-size:11px;font-weight:500}
+.desktop-links a:hover{color:#f4d6a3}
+.header-action{color:#f9ecd8;border-color:#f2e1c66e;background:#ffffff0a;backdrop-filter:blur(5px);font-weight:500;letter-spacing:.3px}
+.header-action:hover{color:#243629;background:#f5e5ca}
+.hero{background:linear-gradient(90deg,rgba(14,23,17,.87) 0%,rgba(22,30,22,.70) 43%,rgba(18,25,21,.34) 100%),url('assets/wedding-venue.webp') center center/cover no-repeat;min-height:max(760px,100svh);grid-template-columns:54% 46%;padding:108px 6vw 92px;color:#fffcf4;position:relative}
+.hero:after{content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 75% 50%,transparent 15%,#16201625 82%),linear-gradient(0deg,#15231972,transparent 25%)}
+.hero-wash{opacity:.13;background-image:radial-gradient(#fff 1px,transparent 1px);background-size:35px 35px;inset:0;z-index:0;pointer-events:none}
+.hero-floral{display:none}
+.hero-copy{align-items:center;max-width:800px;padding:50px 4px 70px}
+.hero-kicker{color:#ead4a8;font-size:10px;letter-spacing:3.1px}
+.kicker-line{background:#d7b887}
+.hero-intro{font-family:var(--script);font-size:clamp(42px,4.2vw,68px);color:#f7e3bf;margin-top:36px;transform:rotate(-3deg);text-shadow:0 1px 15px #0c160a88}
+.hero h1{font-size:clamp(100px,10.5vw,166px);line-height:.63;margin:32px 0 30px;color:#fff7e9;letter-spacing:-3px;filter:drop-shadow(0 5px 18px #111f1580)}
+.hero h1 [data-bride],.hero h1 [data-groom]{font-family:var(--script);font-weight:400;display:block;padding:11px 25px 15px;line-height:.98}
+.hero h1 .ampersand{font-size:clamp(36px,4vw,62px);line-height:.3;color:#e9c590;margin:-8px 0 8px;transform:none}
+.hero-divider{opacity:.9}
+.hero-divider span{background:#d1ac72}
+.hero-divider svg{stroke:#ebd3a4}
+.hero-description{font-family:var(--serif);font-size:clamp(21px,2.1vw,27px);color:#f7eee0;line-height:1.18;margin:30px 0 22px;font-weight:400}
+.hero-date{color:#f0e6d1;font-size:11px;letter-spacing:1.8px;text-transform:uppercase;font-weight:500}
+.date-dot{color:#dbb27b}
+.hero-buttons{margin-top:33px;gap:32px}
+.btn.btn-dark{background:#d0aa78;color:#192519;border:1px solid #dfc29c;box-shadow:0 8px 26px #111b1240;font-size:11px;letter-spacing:.6px;font-weight:600;transition:transform .2s,background .2s}
+.btn.btn-dark:hover{background:#e7cfa9;transform:translateY(-2px)}
+.hero .text-link{color:#f6e4bf;border-color:#d5b37b;font-size:11px}
+.hero .text-link:hover{color:white}
+.hero-art{padding:25px 25px 30px 10px;min-height:600px;animation:photo-rise 1s cubic-bezier(.2,.7,.25,1) both}
+.hero-art-blob{width:85%;background:radial-gradient(circle,#d4bc8680,transparent 65%);filter:blur(30px)}
+.hero-arch{width:min(90%,450px);height:min(100%,610px);border-radius:230px 230px 8px 8px;outline:6px solid #eedfc5;outline-offset:7px;box-shadow:0 0 0 20px #d7bd7c20,0 25px 75px #0b170d9c,0 0 60px #dfc38933;transition:transform .35s}
+.hero-arch:hover{transform:translateY(-7px)}
+.hero-arch img{object-position:center 45%}
+.hero-art-glint{color:#f8dbac;text-shadow:0 0 16px #f7e6c9}
+.art-caption{bottom:24px;letter-spacing:2.5px;color:#f9ead5;font-size:9px;text-shadow:0 1px 6px #000}
+.hero-bottom-note{color:#f9ddac;letter-spacing:2.1px;bottom:22px}
+@keyframes photo-rise{from{opacity:0;transform:translateY(20px) scale(.975)}to{opacity:1;transform:translateY(0) scale(1)}}
+.quote-section{padding:109px 24px 113px;background:radial-gradient(ellipse at center,#53684f,#263b2c 78%);color:#f9f0dd;overflow:hidden}
+.quote-section:before,.quote-section:after{content:'✧';font-family:var(--serif);font-size:150px;position:absolute;color:#cdb58d22;top:-25px;left:6%}
+.quote-section:after{top:auto;bottom:-45px;left:auto;right:6%}
+.quote-seal{color:#e9cd98;font-size:37px}
+.quote-section p{font-size:clamp(39px,5vw,69px);line-height:1.05;max-width:920px;letter-spacing:-.8px}
+.quote-section p em{font-family:var(--script);font-style:normal;font-size:1.22em;color:#e7c797;font-weight:400}
+.quote-section>span{color:#e5d4b9;font-size:9px;letter-spacing:3.3px}
+.quote-bottom{font-family:var(--script);font-size:31px;color:#d4bea2;margin-top:23px}
+.date-section{display:grid;grid-template-columns:minmax(300px,.88fr) minmax(0,1.12fr);align-items:center;gap:clamp(38px,6vw,95px);padding:120px clamp(35px,7vw,140px);background:linear-gradient(110deg,#f4ebdb,#fffaf2 62%,#f9f1e5)}
+.date-section:before{content:'';position:absolute;inset:15px;border:1px solid #bfa67740;pointer-events:none}
+.date-photo-card{height:650px;position:relative;padding:13px;border:1px solid #ccb692;box-shadow:0 23px 55px #7057392c;min-width:0;transform:rotate(-1.8deg)}
+.date-photo-card:after{content:'';position:absolute;inset:25px;border:1px solid #fff6de9e;pointer-events:none}
+.date-photo-card img{height:100%;width:100%;object-fit:cover;object-position:34% center;display:block;filter:saturate(.9) sepia(.08)}
+.date-photo-caption{position:absolute;left:26px;right:26px;bottom:26px;padding:14px 7px;background:#f8ebd6dc;color:#5c4c35;font-size:9px;letter-spacing:3px;text-align:center;backdrop-filter:blur(7px)}
+.date-photo-caption i{font-size:15px;font-style:normal;margin-left:10px}
+.date-content{margin:0;max-width:none;position:relative;z-index:1}
+.date-content .eyebrow{color:#a38a63;letter-spacing:3px}
+.date-section h2{font-size:clamp(63px,6vw,96px);letter-spacing:-2px}
+.date-section h2 em,.wish-section h2 em{font-family:var(--script);font-style:normal;color:#b18e5c;font-size:1.06em;letter-spacing:0;white-space:normal}
+.date-intro{color:#777363}
+.date-day{color:#354536}
+.date-side span:first-child{color:#b38c56}
+.date-side span:last-child{color:#415641}
+.date-meta strong{color:#4c5c45}
+.count-label{color:#8e805e;letter-spacing:2.6px}
+.countdown strong{color:#39503b}
+.countdown span{color:#8e846e}
+.btn.btn-outline.calendar-button{background:#fcf8ee;border:1px solid #a98b60;color:#544b38;border-radius:50px;box-shadow:0 4px 18px #baa68133}
+.btn.btn-outline.calendar-button:hover{background:#efe0c8}
+.date-flower{display:none}
+.wish-section{background:#faf6ef;padding:108px max(24px,6vw) 125px;overflow:hidden}
+.wish-photo-band{position:absolute;inset:0 0 auto;height:245px;background:linear-gradient(0deg,#faf6ef 0%,#faf6ef99 36%,#332c258c 100%),url('assets/wedding-venue.webp') center 35%/cover no-repeat;opacity:.3;pointer-events:none}
+.wish-decoration{position:relative;color:#ad905d;font-size:38px}
+.wish-heading{position:relative;z-index:1}
+.wish-heading .eyebrow{letter-spacing:3px;color:#a48a61}
+.wish-section h2{font-size:clamp(59px,6vw,91px);color:#334536}
+.wish-heading>p:last-child{color:#807b6d}
+.wish-area{position:relative;z-index:1}
+.wish-form,.wishes-board{background:#fffdf8;border:1px solid #d8c7a9;box-shadow:0 18px 55px #57442b15;border-radius:14px;padding:43px}
+.wish-form{background:linear-gradient(145deg,#fffdf8,#f8f0e4)}
+.wishes-board-head{color:#6f704e;letter-spacing:1.6px}
+.wish-form input,.wish-form textarea{background:#fffefa;border:1px solid #e4d8c8;border-radius:8px}
+.wish-form>label,.studio-field>label{color:#958464;letter-spacing:1.7px}
+.wish-submit{border-radius:9px}
+.wish-entry{border-color:#e5d8c5}
+.closing{position:relative;isolation:isolate;background:linear-gradient(#17291cce,#17291ce6),url('assets/wedding-venue.webp') center 58%/cover no-repeat;padding:110px 25px 115px}
+.closing-star{color:#d6b880;font-size:35px}
+.closing p{font-size:clamp(42px,5.8vw,67px);color:#e2c99d}
+.closing strong{font-family:var(--script);font-size:clamp(71px,9vw,130px);font-weight:400;line-height:1.2;color:#fff8e8}
+.closing i{font-style:normal;color:#dcb47e}
+.closing small{color:#f3d6a8;letter-spacing:3px}
+.footer{background:#1c2b20;color:#e0d2b4}
+.floating-keepsake{background:linear-gradient(140deg,#3c513b,#1e2d23);border:1px solid #eadab078;box-shadow:0 12px 32px #17251b9c}
+.floating-keepsake:hover{box-shadow:0 15px 35px #1d2c20ac}
+.floating-icon{background:#f1dfb9;color:#314632}
+.floating-text small{color:#d8c597}
+.studio{background:linear-gradient(120deg,#fffdf6,#f4e9d8);border-left:1px solid #d9c8a7}
+.studio-head h2{font-size:clamp(40px,4vw,53px);color:#314331}
+.studio-head h2 em{font-family:var(--script);font-style:normal;font-size:1.13em;color:#ac8551}
+.studio-subtitle{color:#837b6b}
+.keepsake-preview-wrap{padding:10px;background:linear-gradient(120deg,#d2bd92,#f6ead3,#c8a976);box-shadow:0 15px 35px #5e4d2c35;border-radius:4px}
+.keepsake-preview{background:radial-gradient(circle at 50% 0%,#fffef9,#f8f0e2);border:1px solid #c8ad7e;box-shadow:inset 0 0 0 3px #fffbef,inset 0 0 0 4px #d1ba92}
+.keepsake-top{color:#9f8459}
+.keepsake-image-wrap{outline-color:#c7a678;background:#e9dfca}
+.keepsake-bottom{gap:7px}
+.keepsake-names{color:#3e523e}
+.keepsake-names em,.keepsake-sign{color:#b08a56}
+.upload-control{border:1px dashed #b89f70;background:#f8efdc;border-radius:9px}
+.upload-control:hover{background:#efe0c3}
+.upload-control strong{color:#576443}
+.upload-control small{color:#877e6b}
+.upload-icon{background:#e6d2a8;color:#41523d}
+.studio-field input[type=text]{border:1px solid #d5bf94;border-radius:7px;background:#fffbf5}
+.zoom-line input{accent-color:#846e45}
+.studio-help{color:#7a776c}
+@media(max-width:1100px) and (min-width:721px){
+ .hero{grid-template-columns:55% 45%;padding-left:3.4vw;padding-right:3.4vw}
+ .hero h1{font-size:clamp(95px,11vw,145px)}
+ .hero-art{min-height:510px;padding:0 10px}
+ .date-section{padding:100px 45px;gap:40px}
+ .date-photo-card{height:590px}
+}
+@media(max-width:720px){
+ .site-header{height:68px;padding:0 18px;background:linear-gradient(#13231ad2,#11201815);border-bottom:1px solid #ffffff37}
+ .brand{font-size:8px;letter-spacing:1.8px;gap:8px}
+ .brand-symbol{font-size:24px}
+ .header-action{background:#f6ead722;color:#fff3d8;border:1px solid #f4dec16e;width:43px;height:43px;padding:11px}
+ .hero{display:flex;flex-direction:column;justify-content:flex-end;min-height:100svh;height:auto;padding:125px 18px 78px;isolation:isolate;background:linear-gradient(0deg,#0e1c16ed 0%,#11221dc7 32%,#12201645 69%,#0f1e155e 100%),url('assets/wedding-couple.webp') center 26%/cover no-repeat}
+ .hero:after{z-index:0;background:linear-gradient(0deg,#122218c9,transparent 42%)}
+ .hero-copy{order:1;padding:10px 0 0;max-width:100%;width:100%;min-height:0;z-index:2}
+ .hero-kicker{font-size:8px;letter-spacing:2.2px;gap:6px}
+ .kicker-line{width:10px}
+ .hero-intro{font-size:clamp(36px,9vw,53px);margin-top:24px;line-height:1.3}
+ .hero h1{font-size:clamp(94px,20vw,126px);margin:18px 0 16px;line-height:.57;letter-spacing:0;gap:0}
+ .hero h1 [data-bride],.hero h1 [data-groom]{padding:6px 15px 12px;line-height:1.0}
+ .hero h1 .ampersand{font-size:44px;margin:0 0 7px;line-height:.35}
+ .hero-divider{margin-top:4px;width:135px}
+ .hero-description{font-size:clamp(20px,5.6vw,25px);line-height:1.1;margin:20px 0 15px}
+ .hero-date{flex-wrap:wrap;font-size:9px;gap:9px;letter-spacing:1.15px}
+ .hero-buttons{margin-top:26px;gap:21px;justify-content:center}
+ .hero .text-link{font-size:10px}
+ .hero-art{display:none}
+ .hero-bottom-note{bottom:20px;font-size:8px;left:50%;transform:translateX(-50%);width:max-content}
+ .quote-section{padding:75px 17px 80px}
+ .quote-section p{font-size:clamp(37px,9vw,57px);margin:16px auto}
+ .quote-bottom{font-size:27px}
+ .date-section{display:flex;flex-direction:column;gap:45px;padding:70px 19px 85px}
+ .date-section:before{inset:8px}
+ .date-photo-card{width:min(100%,440px);height:330px;transform:rotate(-1deg);padding:9px;flex:none}
+ .date-photo-card:after{inset:17px}
+ .date-photo-caption{left:16px;right:16px;bottom:16px;padding:10px;font-size:8px}
+ .date-content{width:100%}
+ .date-section h2{font-size:clamp(58px,14vw,79px);margin-top:12px}
+ .date-section h2 em{display:inline}
+ .date-intro{font-size:19px}
+ .date-block{margin-top:27px}
+ .wish-section{padding:76px 17px 85px}
+ .wish-section h2{font-size:clamp(57px,12vw,73px);line-height:.93}
+ .wish-form,.wishes-board{border-radius:12px;padding:29px 23px}
+ .wish-photo-band{height:190px}
+ .closing{padding:85px 20px 95px}
+ .closing p{font-size:clamp(39px,10vw,57px)}
+ .closing strong{font-size:clamp(61px,13vw,90px)}
+ .floating-keepsake{width:61px;height:61px;right:16px;bottom:calc(16px + env(safe-area-inset-bottom));padding:6px;border:1px solid #f3d7a5;border-radius:50%}
+ .floating-keepsake .floating-icon{width:47px;height:47px;background:#e6d0a6}
+ .studio{background:#fbf6ec;border-radius:22px 22px 0 0;padding:26px 19px calc(35px + env(safe-area-inset-bottom))}
+ .studio-head h2{font-size:clamp(36px,9.2vw,45px)}
+ .keepsake-preview-wrap{width:min(100%,340px)}
+ .keepsake-names{font-size:32px}
+}
+@media(max-width:375px){.hero h1{font-size:89px}.hero-kicker{font-size:7px}.hero-date{font-size:8px}.date-photo-card{height:290px}.hero-intro{font-size:37px}.hero-buttons{gap:11px}}
+@media(prefers-reduced-motion:reduce){.hero-art{animation:none}}
